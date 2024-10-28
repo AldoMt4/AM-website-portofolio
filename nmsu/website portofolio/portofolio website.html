@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldo Mata Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header"> 
+        <a href="#" class="logo">Aldo Mata</a>
+        <nav class="navbar">
+            <a href="#" class="active">Home</a> <!-- Home is active and will be highlighted -->
+            <a href="#about">About Me</a> <!-- Fixed About Me link -->
+            <a href="#">Projects</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Aldo Mata</h1>
+            <h3>Cybersecurity Student / Programmer</h3>
+            <p>
+                Hello! I’m Aldo Mata, a Cybersecurity undergraduate at New Mexico State University with a strong passion for programming and secure computing. I have a interest in exploring various areas of cybersecurity, including penetration testing, network security, and encryption technologies. My goal is to develop innovative solutions that address real-world security challenges.
+    
+                Recently, I’ve been involved in several projects that have allowed me to apply my knowledge in practical settings, enhancing my skills in programming languages like Java, C++, and C. I'm excited to further my education and gain hands-on experience in cybersecurity tools and practices as I prepare for a career in this dynamic field.
+    
+                Thank you for visiting my portfolio! I would love to connect with you on LinkedIn to share insights and opportunities in the cybersecurity realm.
+            </p>
+            
+            <div class="btn-box">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bx-envelope'></i></a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading"><span>ABOUT ME</span></h2>
+            <h3>Cybersecurity Undergraduate</h3>
+            <h3>Cybersecurity Undergraduate</h3>
+            <p>Hi, I’m Aldo Mata, a sophomore Cybersecurity student at New Mexico State University, with a strong interest in secure computing and programming. 
+            I am eager to learn and expand my knowledge in areas such as network security, penetration testing, and encryption. I strive to apply my understanding 
+             to real-world scenarios and develop innovative solutions for cybersecurity challenges. If you'd like to connect or talk about cybersecurity, feel free to reach out!</p>
+        </div>
+    </section>
+
+    <script>
+        const links = document.querySelectorAll('.navbar a');
+
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                links.forEach(l => l.classList.remove('active')); // Remove active from all links
+                this.classList.add('active'); // Add active to the clicked link
+            });
+        });
+    </script>
+</body>
+<section class=""
+</html>
