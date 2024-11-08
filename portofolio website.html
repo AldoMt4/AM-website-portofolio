@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldo Mata Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header"> 
+        <a href="index.html" class="logo">Aldo Mata</a>
+        <nav class="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="portfolio.html" class="active">Portfolio</a> <!-- Marking Portfolio as active -->
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div class="home-content">
+            <h1>Hi, I'm Aldo Mata</h1>
+            <h3>Cybersecurity Student / Programmer</h3>
+            <p>Hello! I’m Aldo Mata, a Cybersecurity undergraduate at New Mexico State University with a strong passion for programming and secure computing. I have a deep interest in exploring areas of cybersecurity like penetration testing, network security, and encryption. My goal is to develop innovative solutions that address real-world security challenges.</p>
+            <div class="btn-box">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#" class="btn">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="https://www.linkedin.com/in/aldo-mata-95a07a308/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/AldoMt4" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="mailto:aldo.mata@example.com" target="_blank"><i class='bx bx-envelope'></i></a>
+        </div>
+    </section>
+
+    <script>
+        const links = document.querySelectorAll('.navbar a');
+
+        links.forEach(link => {
+            link.addEventListener('click', function() {
+                links.forEach(l => l.classList.remove('active')); 
+                this.classList.add('active'); 
+            });
+        });
+    </script>
+</body>
+</html>
