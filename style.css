@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333; /* Default text color */
+    background-color: #081b29; /* Light background for better contrast */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 20px 10%; 
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #333; /* Dark gray for logo */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    font-size: 18px;
+    display: flex; 
+    list-style: none; 
+}
+
+.navbar a {
+    margin-right: 20px; 
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #00abfb; /* Match with your theme color on hover */
+}
+
+.home {
+    background: url() no-repeat; 
+    background-size: cover;    
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque background for better readability */
+    max-width: 600px;
+    padding: 20px; /* Padding for content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.home-content::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 100%
+    height:auto 100%;
+    background: #081b29;
+    animation:showright 1s ease forwards;
+    animation-delay: .4s;
+}
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abfb; /* Your theme color */
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    color: #666; /* Dark gray for better readability */
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px; /* Set a fixed height */
+    background: #00abfb; /* Button background */
+    border: 2px solid #00abfb; 
+    border-radius: 8px;
+    font-size: 19px;
+    color: white; /* White text for visibility */
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px; 
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    background-color: white; /* Change background on hover */
+    color: #00abfb; /* Change text color on hover */
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent; /* Second button transparent */
+    color: #00abfb; /* Match theme color */
+}
+
+.btn-box a:nth-child(2):hover {
+    color: white; /* Change text color on hover */
+    background-color: #00abfb; /* Change background on hover */
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white; /* White icon color for visibility */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition */
+
+}
+
+.home-sci a:hover {
+    color: #00abfb; /* Change icon color on hover */
+    border-color: #00abfb; /* Change border color on hover */
+}

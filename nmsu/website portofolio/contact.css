@@ -1,6 +1,5 @@
-/* General Body and Background Styling */
+/* Base styling for the entire page */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     background-image: url('computer.jpg');
     background-size: cover;
@@ -8,47 +7,99 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent background for visibility */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    color:  #7f1c29; /* Highlight the active link */
+}
+
+/* Main content styling */
 main {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    padding: 2rem;
 }
 
-/* Contact Section Styling */
+/* Contact Section styling */
 .contact-section {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
 }
 
 .contact-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
     font-size: 2rem;
     color: #333;
+    margin-bottom: 1rem;
 }
 
+.contact-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Contact details styling */
 .contact-details {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 600px;
-    margin: 0 auto;
+    align-items: center;
+    gap: 1rem;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: #f7f7f7;
     border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
 }
 
@@ -58,29 +109,51 @@ main {
 
 .contact-icon {
     font-size: 1.5rem;
-    margin-right: 15px;
-    color: #0077b5;
+    color: #0077b5; /* LinkedIn blue color */
+    margin-right: 10px;
 }
 
-.contact-item a {
-    font-size: 1.1rem;
-    color: #0077b5;
+/* LinkedIn Logo styling */
+.contact-item.linkedin-item a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    color: #0077b5;
 }
 
-.contact-item a:hover {
-    text-decoration: underline;
+.contact-item.linkedin-item .name-text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
 }
 
-/* Footer Styling */
+/* Footer styling */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 1rem 0;
     width: 100%;
+    position: relative;
+    left: 0;
 }
 
 footer p {
     margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 1.5rem;
+        width: 90%;
+    }
+
+    .contact-icon {
+        font-size: 1.2rem;
+    }
+
+    .linkedin-logo-container img {
+        width: 24px;
+    }
 }
