@@ -8,18 +8,18 @@
 }
 
 body {
-    color: #333; /* Default text color */
-    background-color: #f4f4f4; /* Light background */
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Header styling */
+/* Header Styling */
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
-    padding: 20px 10%; 
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +27,6 @@ body {
 }
 
 .logo {
-    position: relative;
     font-size: 25px;
     color: #333;
     text-decoration: none;
@@ -48,7 +47,7 @@ body {
 }
 
 .navbar a:hover {
-    color: #A10332; /* Hover color */
+    color: #A10332;
 }
 
 /* Resume Section Styling */
@@ -61,13 +60,13 @@ body {
 .resume-section h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #A10332; /* Crimson color */
+    color: #A10332;
 }
 
-/* Wider PDF Embed */
+/* PDF Embed Styling */
 iframe {
-    width: 90%; /* Adjust width as needed */
-    height: 700px; /* Height of the iframe */
+    width: 90%;
+    height: 700px;
     border: none;
     margin: 0 auto;
     display: block;
@@ -81,7 +80,7 @@ iframe {
 
 .download-btn {
     padding: 10px 20px;
-    background-color: #A10332; /* Button color */
+    background-color: #A10332;
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
@@ -91,7 +90,7 @@ iframe {
 }
 
 .download-btn:hover {
-    background-color: #7f1c29; /* Darker shade on hover */
+    background-color: #7f1c29;
 }
 
 /* Footer Styling */

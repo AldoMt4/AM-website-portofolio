@@ -12,13 +12,14 @@ body {
     color: #333; /* Default text color */
 }
 
+/* Header Styling */
 .header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; 
-    padding: 20px 10%; 
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for header */
+    width: 100%;
+    padding: 20px 10%;
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +35,7 @@ body {
 
 .navbar {
     display: flex;
-    list-style: none; 
+    list-style: none;
 }
 
 .navbar a {
@@ -46,14 +47,16 @@ body {
 }
 
 .navbar a:hover {
-    color: #A10332; /* Crimson hover color */
+    color: #A10332;
 }
 
+/* Hero Section Styling */
 .hero-section {
-    background-color: #A10332; /* Crimson background */
+    background-color: #A10332;
     color: white;
     text-align: center;
     padding: 60px 20px;
+    margin-top: 80px; /* Adjust for fixed header */
 }
 
 .hero-section h2 {
@@ -66,12 +69,14 @@ body {
     font-size: 1.2rem;
 }
 
+/* Project Card Styling */
 .project-card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin: 20px 10%;
+    margin: 20px auto;
+    max-width: 80%; /* Center the card with a maximum width */
 }
 
 .project-card img {
@@ -85,7 +90,8 @@ body {
     margin-bottom: 10px;
 }
 
-.project-info p, .project-info ul {
+.project-info p, 
+.project-info ul {
     font-size: 1rem;
     color: #666;
     margin: 10px 0;
@@ -95,6 +101,7 @@ body {
     list-style: disc inside;
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
@@ -107,8 +114,18 @@ footer {
     height: 24px;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .project-card {
         margin: 20px 5%;
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section p,
+    .navbar a {
+        font-size: 1rem;
     }
 }
