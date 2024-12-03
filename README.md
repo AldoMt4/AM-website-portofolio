@@ -1,7 +1,7 @@
-AM-Website-Portfolio
+✨ AM-Website-Portfolio ✨
 
-A responsive and elegant portfolio website designed to showcase your projects, skills, and experience. This website is compatible with all platforms and devices, providing a seamless user experience.
-
+A responsive and elegant portfolio website to showcase your projects, skills, and experience.
+🌐 Compatible across all platforms and devices, providing a seamless user experience!
 Features
 
 Fully responsive design for desktop, tablet, and mobile devices.
