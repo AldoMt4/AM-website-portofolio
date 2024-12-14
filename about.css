@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333; /* Default text color */
+}
+
+/* Header styles (same as main) */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 20px 10%; 
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #333; /* Dark gray for logo */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar {
+    font-size: 18px;
+    display: flex; 
+}
+
+.navbar a {
+    margin-right: 20px; 
+    text-decoration: none; 
+    color: #333; 
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #A10332; /* Match with your theme color on hover */
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 250px 10%; /* Increased padding to lower the content further */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.about-content {
+    max-width: 600px; /* Limit width for content */
+    padding: 20px; /* Padding for content */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque background for better readability */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.about-content h2 {
+    font-size: 3rem; /* Heading size */
+    color: #A10332; /* Your theme color */
+    text-align: center;
+}
+
+.about-content p {
+    font-size: 1.2rem; /* Font size for paragraph */
+    margin: 1.5rem 0; /* Margin around paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about {
+        padding: 50px 5%; /* Reduce padding on smaller screens */
+    }
+
+    .about-content {
+        padding: 15px; /* Reduce padding in content */
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem; /* Adjust heading size */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+}
